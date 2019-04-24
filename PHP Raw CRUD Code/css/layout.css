@@ -1,0 +1,499 @@
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif, american-captain;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+/*font*/
+@font-face{
+    font-family: 'rockout';
+    src:url('../fonts/Rockout.otf');
+}
+
+@font-face{
+    font-family: 'american-captain';
+    src:url('../fonts/American Captain.otf');
+    src:url('../fonts/American Captain.ttf');
+}
+
+@font-face{
+    font-family: 'marketdeco';
+    src:url('../fonts/Market_Deco.ttf');
+}
+@font-face{
+    font-family: 'quotus-bold';
+    src: url('../fonts/Quotus-Bold.ttf');
+}
+@font-face{
+    font-family: 'sanchez';
+    src: url('../fonts/Sanchezregular.otf');
+}
+@font-face{
+    font-family: 'sanchez-italic';
+    src: url('../fonts/Sanchezregular-ita.otf');
+}
+@font-face{
+    font-family: 'euphorigenic';
+    src: url('../fonts/euphorigenic.ttf');
+}
+@font-face{
+    font-family: 'Nilland';
+    src: url('../fonts/Nilland.ttf');
+}
+@font-face{
+    font-family: 'Nilland-bold';
+    src: url('../fonts/Nilland-Bold.ttf');
+}
+
+.cusfont{
+    font-family: rockout;
+    font-size: inherit;
+}
+
+.cusfont2{
+    font-family: american-captain;
+    font-size: inherit;
+}
+
+/*global*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+}
+.error{
+	color:tomato;
+}
+ul{
+    margin: 0;
+    padding:0;
+}
+.titles{
+    background-color:grey;
+    border: 0;
+    color: black;
+    padding:0px 0px 0px 60px;
+    font-family: sanchez;
+}
+.titles textarea{
+    font-family: Nilland;
+}
+/*.listing a{
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    /*padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;*/
+}*/
+/*
+.listing img{
+    width:80px;
+    height: 50px;
+    border-radius: 50%;
+}*/
+
+.tables{
+    border: none;    
+}
+.tables a{
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: black;
+}
+.tables img{
+    border-radius: 10px;
+}
+
+/*buttons*/
+.button_1{
+    height: 36px;
+    background-color: grey;
+    border: 0;
+    color: aliceblue;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: marketdeco;
+    font-size: 20px;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.3);
+}
+.button_2{
+    height: 38px;
+    background-color: red;
+    color: #ffffff;
+    border:0;
+    float: right;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: Nilland;
+    font-size: 20px;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.5);
+}.button_3{
+    height: 38px;
+    background-color: black;
+    border:0;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-family: Nilland;
+    color: white;
+    font-size: 20px;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.5);
+}
+
+/*header*/
+header{
+    background-color:black;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 100px;
+    border-bottom: red 3px solid;
+    margin: 0;
+}
+header a{
+    color: gray;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #branding a{
+    float: left;
+    font-size: 55px;
+}
+header #branding h1{
+    margin: 0;
+}
+header nav{
+  float:right;
+  margin-top:10px;
+}
+header .highlight{
+    color: red;
+    font-weight: bold;
+}
+header .current a{
+    color: cadetblue;
+    font-weight: bold;
+}
+header a:hover{
+    color: cadetblue;
+    font-weight: bold;
+}
+header #branding a:hover{
+    color: #ffffff;
+    font-weight: bold;
+}
+/*showcase*/
+#showcase{
+    min-height: 400px;
+    background:url('../images/showcase.jpg') no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    color: #ffffff;
+    font-size:50px;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.8);
+}
+#showcase img{
+    width: 100%;
+    position: top;
+    background-size: cover;
+    height: 500px;
+    box-shadow: 2px 40px 56px 2px rgba(0,0,0,0.8);
+}
+#showcase h1{
+    margin-top:100px;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+.display-textmiddle{
+    position:absolute;
+    padding: 600px 50px 10px 50px;
+    bottom:0;
+    left:50%;
+    top:0;
+    transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%)
+}
+
+/*newletter*/
+#newsletter{
+    padding: 15px;
+    color: black;
+    background-color: darkgrey;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.8);
+}
+#newsletter h1{
+    float: left;
+    text-align: center;
+    font-family: marketdeco;
+    font-size: 20px;
+}
+#newsletter form{
+    float: right;
+    margin-top: 25px;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.5);
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+    font-family: marketdeco;
+    font-size: 20px;
+   
+}
+
+/*boxes*/
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    font-family: marketdeco;
+    font-size: 15px;
+}
+
+#boxes .box img{
+    width: 90px;
+}
+
+/*footer*/
+footer{
+    
+    font-family: marketdeco;
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: black;
+    text-align: center;
+    border-top: red 3px solid;
+}
+footer a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+
+/*login*/
+
+#login{
+    padding: 15px;
+    color: black;
+    font-family: marketdeco;
+    font-size: 20px;
+    background:url(../images/batmanarkhamknight.png) no-repeat;
+    background-position: center;
+    background-size: cover; 
+   /* border-bottom: red 3px solid;*/
+    text-align: center;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.5);
+}
+#login form{
+    margin-top: 55px;
+    margin-bottom: 135px;
+}
+#login input[type="email"]{
+    padding: 4px;
+    height: 35px;
+    width: 450px;
+    font-family: Nilland;
+    font-size: 20px;
+    text-align: left;
+    border: 0px solid;
+    border-color: #1e5f99;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.5);
+}
+#login input[type="password"]{
+    padding: 4px;
+    height: 35px;
+    width: 450px;
+    font-family: Nilland;
+    font-size: 20px;
+    text-align: left;
+    border: 0px solid;
+    border-color: #1e5f99;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.5);
+}
+#login input[type="username"]{
+    padding: 4px;
+    height: 35px;
+    width: 450px;
+    font-family: Nilland;
+    font-size: 20px;
+    text-align: left;
+    border: 0px solid;
+    border-color: #1e5f99;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.5);
+}
+
+
+/*signup*/
+#signup{
+    padding: 15px;
+    color: black;
+    font-size: 20px;
+    background:url(../images/battlefield1.jpg) no-repeat;
+    background-position: top;
+    background-size:     cover; 
+   /* border-bottom: red 3px solid;*/
+    text-align: center;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.5);
+    
+}
+#signup form, .titles form{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+#signup h1{
+    font-family: Nilland;
+}
+.titles input[type="text"], .titles select, .titles textarea,
+#signup input[type="email"]{
+    padding: 4px;
+    height: 35px;
+    width: 450px;
+    font-family: Nilland;
+    font-size: 20px;
+    text-align: left;
+    border: 0px solid;
+    border-color: #1e5f99;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.5);
+}
+.titles select{
+    padding: 4px;
+    height: 35px;
+    width: 458px;
+    font-family: Nilland;
+    font-size: 20px;
+    text-align: left;
+    border: 0px solid;
+    border-color: #1e5f99;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.5);
+}
+#signup input[type="password"]{
+    padding: 4px;
+    height: 35px;
+    width: 450px;
+    font-family: Nilland;
+    font-size: 20px;
+    text-align: left;
+    border: 0px solid;
+    border-color: #1e5f99;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.5);
+}
+#signup input[type="username"]{
+    padding: 4px;
+    height: 35px;
+    width: 450px;
+    font-family: Nilland;
+    font-size: 20px;
+    text-align: left;
+    border: 0px solid;
+    border-color: #1e5f99;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.5);
+}
+#signup input[type="firstname"]{
+    padding: 4px;
+    height: 35px;
+    width: 450px;
+    font-family: Nilland;
+    font-size: 20px;
+    text-align: left;
+    border: 0px solid;
+    border-color: #1e5f99;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.5);
+}
+#signup input[type="lastname"]{
+    padding: 4px;
+    height: 35px;
+    width: 450px;
+    font-family: Nilland;
+    font-size: 20px;
+    text-align: left;
+    border: 0px solid;
+    border-color: #1e5f99;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.8);
+}
+
+/*Profile*/
+#profile{
+    background-color:gray;
+    font-family: Nilland;
+}
+#profile img{
+    border-radius:80px;
+}
+#profile table td{
+    padding: 0 20px 5px 5px;
+}
+#profile table{
+    text-align: left;
+    font-family: Nilland;
+    font-size: 20px;
+}
+/*posts*/
+/*.posts{
+    background-color: saddlebrown;
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.8);
+}
+.post_table{
+    box-shadow: 2px 10px 16px 2px rgba(0,0,0,0.8);
+}*/
+.post_table th{
+    border: 0px solid;
+    border-color:  #1e5f99;
+    text-align: center;
+    padding: 2px 50px 2px 20px;
+    background-color: grey;
+    font-family: Nilland-bold;
+    
+}
+.post_table td{
+    border: 0px solid;
+    text-align: left;
+    width: 100%;
+    font: Arial;
+    background-color: darkgray;
+    font-family: Nilland;
+}
+.posts h2{
+    font-family: Nilland;
+}
+.posts{
+    background: url(../images/fc58k.jpg) no-repeat;
+    min-height: 400px;
+    background-size: cover;
+    background-position: top;
+    background-color: aliceblue;
+}
+/*carousel*/
+.carousel{
+    max-width: 1100px;
+    align-self: center;
+    
+}
